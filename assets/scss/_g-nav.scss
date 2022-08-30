@@ -1,0 +1,131 @@
+@use "mixin_and_variable" as mixVal;
+
+.g-nav_button_wrapper{//button_style
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    row-gap: 8px;
+    top:15px;
+    right:15px;
+    width:100px;
+    height: 100px;
+    background-color: #fff;
+    z-index: 1001;
+    span{
+        width: 50px;
+        height: 5px;
+        border-radius: 12px;
+        background-color: #515151;
+        transition: all .2s;
+    }
+    &.active{
+        span{
+            &:nth-of-type(1){
+                transform: translateY(13px) rotate(-45deg);
+            }
+            &:nth-of-type(2){
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            &:nth-of-type(3){
+                transform: translateY(-13px) rotate(45deg);
+            }
+        }
+    }
+}
+.g-nav_wrapper{//g-nav_style
+    opacity: 0;
+    transition: all 0.2s;
+    display: none;
+    &.opened{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100vw;
+        height:100vh;
+        background-color: #efefef;
+        opacity: 1;
+        left:0;
+    }
+}
+
+#menu-main-menu{
+    @include mixVal.flex(center,center,column);
+    row-gap: 24px;
+    li{
+        a{
+            font-size: 4.0rem;
+            font-weight: 600;
+            transition: 0.2s all linear;
+            border:solid 2px rgba(0,0,0,0);
+        }
+    }
+}
+
+@include mixVal.hoverAction_g-nav(true);
+
+@media screen and (max-width:mixVal.$tab_maxwidth) and (min-width:mixVal.$tab_minwidth) {
+    @include mixVal.hoverAction_g-nav(false);
+}
+
+@media screen and (max-width:mixVal.$sp_maxwidth) {
+    .g-nav_button_wrapper{
+        row-gap: 6px;
+        top:10px;
+        right:0;
+        width: 50px;
+        height: 50px;
+        border: solid 1px #000;
+        span{
+            width: 25px;
+            height: 3px;
+            border-radius: 12px;
+            background-color: #000;
+            transition: all .2s;
+        }
+        &.active{
+            span{
+                &:nth-of-type(1){
+                    transform: translateY(10px) rotate(-45deg);
+                }
+                &:nth-of-type(2){
+                    transform: translateX(100px);
+                    opacity: 0;
+                }
+                &:nth-of-type(3){
+                    transform: translateY(-8px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .g-nav_wrapper{//g-nav_style
+        opacity: 0;
+        transition: all 0.2s;
+        &.opened{
+            width:100vw;
+            height:100vh;
+            background-color: #efefef;
+            z-index: 1000;
+            top:0;
+            transition: all 0.2s;
+        }
+    }
+    #g-nav{
+        #g-nav_list{
+            row-gap: 24px;
+            li{
+                a{
+                    font-size: 4.0rem;
+                    font-weight: 600;
+                    &:active{
+                        border-color: rgba(73,73,73,1);
+                    }
+                }
+            }
+        }
+    }
+
+    @include mixVal.hoverAction_g-nav(false);
+}

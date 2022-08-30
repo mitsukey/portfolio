@@ -1,0 +1,85 @@
+@media (hover:hover) {
+
+    #menu-main-menu{
+        li{
+            a:hover{
+                border-color: rgba(73,73,73,1);
+            }
+        }
+    }
+
+    #menu-footer-menu{
+        li{
+            a:hover{
+                border-color: rgba(250,250,250,1);
+            }
+        }
+    }
+
+
+    .clickHere:hover{
+        /*hoverした際の移動*/
+        background:#333;
+        color:#fff;
+        &::before{
+            right:-45px;
+        }
+        &::after{
+            right:-40px;
+        }
+    }
+    footer{
+        .page-top_wrapper{
+            a:active{
+                .page-top_container{
+                    svg{
+                        transform: rotateY(360deg) translateY(-10px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (hover:none) {
+
+    #menu-main-menu{
+        li{
+            a:active{
+                border-color: rgba(73,73,73,1);
+            }
+        }
+    }
+
+    #menu-footer-menu{
+        li{
+            a:active{
+                border-color: rgba(250,250,250,1);
+            }
+        }
+    }
+
+    .clickHere:active{
+        /*hoverした際の移動*/
+        background:#333;
+        color:#fff;
+        &::before{
+            right:-45px;
+        }
+        &::after{
+            right:-40px;
+        }
+    }
+
+    footer{
+        .page-top_wrapper{
+            a:active{
+                .page-top_container{
+                    svg{
+                        transform: rotateY(360deg) translateY(-10px);
+                    }
+                }
+            }
+        }
+    }
+}

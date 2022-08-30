@@ -1,0 +1,114 @@
+@use "mixin_and_variable" as mixVal;
+
+$footer_logo_size:65%;
+
+footer{
+    @include mixVal.flex(space-between,flex-start,column);
+    width:100%;
+    padding:2.4rem;
+    color: #fff;
+    background-color: #333;
+    .footer_wrapper{
+        @include mixVal.flex(space-between,center);
+        width: inherit;
+        a{
+            img{
+                width:$footer_logo_size;
+                height:$footer_logo_size;
+            }
+            display: block;
+        }
+        .footer_navList_wrapper{
+            @include mixVal.flex(flex-end,center,column);
+        }
+    }
+    .page-top_wrapper{
+        position: fixed;
+        display: flex;
+        width:50px;
+        height: 50px;
+        bottom:15px;
+        right:15px;
+        background-color: #fff;
+        z-index: 100;
+        a{
+            .page-top_container{
+                @include mixVal.flex();
+                svg{
+                    transition: .5s;
+                    polyline{
+                        width:50px;
+                        height:50px;
+                    }
+                }
+            }
+        }
+    }
+    small{
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* footer-menu */
+#menu-footer-menu{
+    @include mixVal.flex(flex-end,center);
+    column-gap: 2.4rem;
+    li{
+        a{
+            color:#fff;
+            border-bottom:solid 2px rgba(0,0,0,0);
+            transition: 0.2s all linear;
+        }
+    }
+}
+
+
+@include mixVal.hoverAction_footer(true);
+
+@media screen and (max-width:mixVal.$tab_maxwidth) and (min-width:mixVal.$tab_minwidth) {
+    @include mixVal.hoverAction_footer(false);
+}
+
+@media screen and (max-width:mixVal.$sp_maxwidth) {
+    footer{
+        .footer_wrapper{
+            flex-direction: column-reverse;
+            h1{
+                a{
+                    @include mixVal.flex(center,center);
+                    img{
+                        width:45%;
+                    }
+                }
+            }
+            .footer_navList_wrapper{
+                .footer_navList{
+                    display: none;
+                }
+                .page-top_wrapper{
+                    position: fixed;
+                    display: flex;
+                    width:50px;
+                    height: 50px;
+                    bottom:15px;
+                    right:15px;
+                }
+            }
+        }
+    }
+    @include mixVal.hoverAction_footer(false);
+
+    /* footer-menu */
+    #menu-footer-menu{
+        flex-flow: column;
+        row-gap: 2.4rem;
+        li{
+            a{
+                color:#fff;
+            }
+        }
+    }
+
+}

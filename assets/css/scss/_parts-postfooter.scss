@@ -1,0 +1,87 @@
+/* parts-postfooter */
+@use "../../scss/mixin_and_variable" as mixVal;
+
+.footer-widget_wrapper{
+    @include mixVal.flex(space-around,flex-start);
+    width:100%;
+    h6{
+        @include mixVal.fz(16);
+        font-weight: 600;
+    }
+    .footer-widget_container{
+        width:calc(( 90rem - ( 2.4rem * 2 )) /3 );
+        @include mixVal.flex(flex-start,flex-start,column);
+        row-gap: 1.2rem;
+        .widget_block {
+            &.widget_recent_entries{
+                width:100%;
+                .wp-block-latest-posts__list{
+                    &.wp-block-latest-posts{
+                        @include mixVal.flex(flex-start,flex-start,column);
+                        li{
+                            width: 100%;
+                            border-bottom:solid 2px #000;
+                            &:last-of-type{
+                                border:none;
+                            }
+                        }
+                    }
+                }
+            }
+            &.widget_archive{
+                width:100%;
+                .wp-block-archives-list{
+                    &.wp-block-archives{
+                        @include mixVal.flex(flex-start,flex-start,column);
+                        li{
+                            width:100%;
+                            border-bottom:solid 2px #000;
+                            &:last-of-type{
+                                border:none;
+                            }
+                        }
+                    }
+                }
+            }
+            &.widget_tag_cloud{
+                .wp-block-tag-cloud{
+                    @include mixVal.flex(flex-start,flex-start);
+                    flex-wrap: wrap;
+                    column-gap: 0.8rem;
+                    row-gap: 0.5rem;
+                    .tag-cloud-link{
+                        @include mixVal.fz(16,important);
+                        padding: 0.5rem 1rem;
+                        border: solid 1px #020042;
+                        border-radius: 1.6rem;
+                        transition: all 0.2s linear;
+                    }
+                }
+            }
+        }
+    }
+}
+@include mixVal.hoverAction_parts-postfooter(true);
+
+@media screen and (max-width:mixVal.$tab_maxwidth) and (min-width:mixVal.$tab_minwidth) {
+    .footer-widget_wrapper{
+        @include mixVal.flex(space-between,flex-start);
+        flex-wrap: wrap;
+        gap:3vh;
+    }
+    @include mixVal.hoverAction_parts-postfooter(false);
+}
+
+@media screen and (max-width:mixVal.$sp_maxwidth) {
+
+.footer-widget_wrapper{
+    @include mixVal.flex(space-around,center,column);
+    .footer-widget_container{
+        width:100vw;
+        padding:4vw;
+    }
+}
+
+@include mixVal.hoverAction_parts-postfooter(false);
+
+}

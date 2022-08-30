@@ -1,0 +1,159 @@
+/* common_style */
+@use "mixin_and_variable" as mixVal;
+*{
+    scrollbar-color: #D4AA70 #e4e4e4;
+    word-wrap: break-word;
+}
+
+html{
+    font-size: 10px;
+    body{
+        font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+        box-sizing: border-box;
+        width:100%;
+        margin: 0 auto;
+        h2{
+            @include mixVal.fz(42);
+            font-weight: bold;
+        }
+        h3{
+            @include mixVal.fz(56);
+            font-weight: 600;
+        }
+        h4{
+            @include mixVal.fz(36);
+            font-weight: 600;
+        }
+        h5{
+            @include mixVal.fz(20);
+            font-weight: 600;
+        }
+        p{
+            @include mixVal.fz(16);
+            line-height: 1.6em;
+        }
+        th,td{
+            @include mixVal.fz(16);
+        }
+        a{
+            @include mixVal.fz(16);
+            text-decoration: none;
+            color: #494949;
+        }
+        time{
+            @include mixVal.fz(14);
+        }
+        small{
+            @include mixVal.fz(10);
+        }
+        .br-res{
+            display: none;
+        }
+        .clickHere{
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            margin: 0 auto;
+            padding-left: inherit;
+            padding-right: inherit;
+                /*矢印の基点とするためrelativeを指定*/
+            position: relative;
+            /*ボタンの形状*/
+            border: 1px solid #555;
+            padding: 8px 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            outline: none;
+            /*アニメーションの指定*/
+            transition: all .2s linear;
+            &::before{/*矢印と下線の形状*/
+            content:"";
+            /*絶対配置で下線の位置を決める*/
+            position: absolute;
+            top:50%;
+            right:-26px;
+            /*下線の形状*/
+            width:50px;
+            height:1px;
+            background:#333;
+            /*アニメーションの指定*/
+            transition: all .2s linear;
+            }
+            &::after{
+            content:"";
+            /*絶対配置で矢印の位置を決める*/
+            position: absolute;
+            top: 20%;
+            right: -21px;
+            /*矢印の形状*/
+            width:1px;
+            height:12px;
+            background:#333;
+            transform:skewX(45deg);
+            /*アニメーションの指定*/
+            transition: all .2s linear;
+            }
+        }
+    }
+}
+
+@include mixVal.hoverAction_common(true);
+
+@media screen and (max-width:mixVal.$tab_maxwidth) and (min-width:mixVal.$tab_minwidth) {
+    html{
+        body{
+            h2{
+
+            }
+            h3{
+
+            }
+            h4{
+
+            }
+            h5{
+
+            }
+            p{
+                line-height: 1.8em;
+            }
+        }
+    }
+    @include mixVal.hoverAction_common();
+}
+
+@media screen and (max-width:mixVal.$sp_maxwidth) {
+    html{
+        body{
+            width:100vw;
+            h2{
+                @include mixVal.fz_sp(28);
+            }
+            h3{
+                @include mixVal.fz_sp(24);
+            }
+            h4{
+                @include mixVal.fz_sp(20);
+            }
+            h5{
+                @include mixVal.fz_sp(14);
+            }
+            p{
+                @include mixVal.fz_sp(14);
+                line-height: 1.6em;
+            }
+            .br-sp{
+                display: none;
+            }
+            .br-res{
+                display: initial;
+            }
+            .clickHere{
+                width: 65%;
+                padding:8px 16px;
+            }
+        }
+    }
+    @include mixVal.hoverAction_common();
+}

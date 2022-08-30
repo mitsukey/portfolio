@@ -1,0 +1,103 @@
+@use "mixin_and_variable" as mixVal;
+
+.single{
+    .page_article_header{
+        @include mixVal.single_page_width(900);
+        margin:0 auto;
+        h4{
+            padding: 15rem 0 4.0rem;
+        }
+        .single_supplement{
+            margin: 0 0 4.0rem;
+            .single_category{
+                @include mixVal.flex(flex-start,center);
+                column-gap: 8px;
+                a[rel="category tag"]{
+                    padding: 0.5rem 1.0rem;
+                    border:solid 1px #020042;
+                    border-radius: 1.6rem;
+                    transition:all 0.2s linear;
+                    &:hover{
+                        background-color: #020042;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    article{
+        @include mixVal.single_page_width(900);
+        margin:0 auto 4.8rem;
+        .works_single_container{
+            figure{
+                margin: 0;
+            }
+        }
+        .post_tags{
+            @include mixVal.flex(flex-start,flex-start);
+            column-gap: 0.8rem;
+            margin-top:3.2rem;
+            a[rel="tag"]{
+                padding:0.5rem 1.0rem;
+                border:solid 1px #020042;
+                border-radius: 1.6rem;
+                transition:all 0.2s linear;
+                &:hover{
+                    background-color: #020042;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .page_article_footer{
+        @include mixVal.single_page_width(900);
+        margin:0 auto 4.8rem;
+        .content_tags{
+            @include mixVal.flex(flex-start,center);
+            column-gap: 8px;
+            li{
+                a{
+                    padding:0.25rem 1rem;
+                    border:solid 1px #000;
+                    border-radius:12px;
+                }
+            }
+        }
+    }
+}
+aside{
+    @include mixVal.single_page_width(900);
+    margin: 0 auto 7.2rem;
+}
+
+@media screen and (max-width:mixVal.$tab_maxwidth) and (min-width:mixVal.$tab_minwidth) {
+    .single{
+        .page_article_header{
+            padding: 0 4vw;
+        }
+        article{
+            padding: 0 4vw;
+        }
+        .page_article_footer{
+            padding: 0 4vw;
+        }
+    }
+}
+
+@media screen and (max-width:mixVal.$sp_maxwidth) {
+    
+.single{
+    .page_article_header{
+        padding: 0 4vw;
+        h4{
+            padding: 15rem 0 4.0rem;
+        }
+        /*.single_supplement{
+        }*/
+    }
+    article{
+        padding: 0 4vw;
+    }
+}
+
+}

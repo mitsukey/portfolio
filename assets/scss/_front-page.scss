@@ -1,0 +1,220 @@
+@use "mixin_and_variable" as mixVal;
+
+#top_view{
+    position:relative;
+    .top_img{
+        width: 100%;
+        height:auto;
+        position: relative;
+    }
+    .top_img_sp{
+        display: none;
+    }
+    h2{
+        top:50%;
+        margin-left:10px;
+        position: absolute;
+        @include mixVal.flex(center,center);
+        color: #fff;
+        .br-sp{
+            display: none;
+        }
+    }
+    .catch_copy{
+        font-size: 2.4rem;
+        text-align: center;
+        margin:15rem auto;
+    } 
+}
+
+#about,#works{
+    .section_wrapper{
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        .section_wrapper_image{
+            @include mixVal.flex(flex-start,flex-start);
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .section_wrapper_paragraph{
+            @include mixVal.flex(space-around,center,column);
+            max-width: 500px;
+            width:100%;
+            background-color: #efefef;
+            opacity: .75;
+            border: #000 solid 1px;
+            padding: 1.5rem;
+            z-index: 1;
+            h3{
+                display: flex;
+                width: inherit;
+                padding-left:inherit;
+                padding-right:inherit;
+            }
+            p{
+                display: flex;
+                width: inherit;
+                padding-left: inherit;
+                padding-right: inherit;
+            }
+        }
+        .section_wrapper_paragraph_alignLeft{
+            margin: 5rem -15rem -5rem 0;
+            h3{
+                justify-content: flex-start;
+            }
+            p{
+                justify-content: flex-start;
+            }
+            a{
+                justify-content: center;
+            }
+        }
+        .section_wrapper_paragraph_alignRight{
+            margin: 5rem 0 -5rem -15rem;
+            h3{
+                justify-content: flex-end;
+            }
+            p{
+                justify-content: flex-end;
+            }
+            a{
+                justify-content: center;
+            }
+        }
+    }
+}
+
+#blognews{
+    .section_wrapper{
+        h3{
+            text-align: center;
+        }
+        .blogNews_wrapper{
+            .clickHere{
+                margin-top: 4.8rem;
+            }
+        }
+    }
+}
+
+.top_main{
+    .contents_wrapper{
+        display: flex;
+        flex-flow: column;
+        row-gap: 15rem;
+        margin:10rem 0 24rem;
+        .catch_copy{
+            text-align: center;
+        }
+        h3{
+            padding-top:0;
+            padding-bottom:0;
+        }
+    }
+}
+
+@media screen and (max-width:mixVal.$tab_maxwidth) and (min-width:mixVal.$tab_minwidth) {
+    #top_view{
+        .top_img_sp{
+            width:100%;
+            height:100%;
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        h2{
+            top:30vw;
+        }
+    }
+
+    #about,#works{
+        .section_wrapper{
+            width:100vw;
+            margin: 0 auto;
+            img{
+                width:50vw;
+            }
+            .section_wrapper_paragraph{
+                width:50vw;
+            }
+        }
+    }
+    #blognews{
+        padding: 0 4vw;
+    }
+}
+
+@media screen and (max-width:mixVal.$sp_maxwidth) {
+    #top_view{
+        .top_img{
+            display: none;
+        }
+        .top_img_sp{
+            display: block;
+            width:100%;
+            height:100%;
+        }
+        h2{
+            .br-sp{
+                display: initial;
+            }
+        }
+        .catch_copy{
+            @include mixVal.fz(20);
+        }
+    }
+
+    #about,#works{
+        .section_wrapper{
+            max-width: mixVal.$sp_maxwidth;
+            width:100% !important;
+            .section_wrapper_paragraph{
+                width:100%;
+                height:75vw;
+                margin:0;
+                @include mixVal.paragraph_res();
+                h3{
+                    width: 100%;
+                }
+            }
+        }
+        .section_wrapper_paragraph_alignLeft{
+            margin: initial !important;
+        }
+        .section_wrapper_paragraph_alignRight{
+            margin: initial !important;
+        }
+    }
+    #about{
+        .section_wrapper{
+            flex-flow: column-reverse;
+        }
+    }
+    #works{
+        .section_wrapper{
+            flex-flow: column;
+        }
+    }
+    #blognews{
+        padding: 0 4vw;
+        .section_wrapper{
+            .blogNews_wrapper{
+                .clickHere{
+                    margin-top: 3.2rem;
+                }
+            }
+        }
+        
+    }
+    
+    .top_main{
+        padding-top:0;
+    }
+}
+

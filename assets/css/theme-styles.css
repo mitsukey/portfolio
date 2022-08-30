@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* --------------------------------------------------
+color-palette
+-------------------------------------------------- */
+/* スカイブルー */
+.has-skyblue-background-color {
+    background-color:#00A1C6;
+}
+.has-skyblue-color {
+    color:#00A1C6;
+}
+
+/* ライトスカイブルー */
+.has-light-skyblue-background-color {
+    background-color: #ecf5f7;
+}
+.has-light-skyblue-color {
+    color: #ecf5f7;
+}
+
+/* ライトグレー */
+.has-light-gray-background-color {
+    background-color: #F7F6F5;
+}
+.has-light-gray-color {
+    color:#F7F6F5;
+}
+
+/* グレー */
+.has-gray-background-color {
+    background-color: #767268;
+}
+.has-gray-color {
+    color:#767268;
+}
+
+/* ダークグレー */
+.has-dark-gray-background-color {
+    background-color: #43413B;
+}
+.has-dark-gray-color {
+    color:#43413B;
+}
+
+/* --------------------------------------------------
+font-size
+-------------------------------------------------- */
+/* 極小 */
+.has-x-small-font-size {
+    font-size: 0.875rem;
+}
+
+/* 小 */
+.has-small-font-size {
+    font-size: 1rem;
+}
+
+/* 標準 */
+.has-normal-font-size {
+    font-size: 1.125rem;
+}
+
+/* 大 */
+.has-large-font-size {
+    font-size: 1.5rem;
+}
+
+/* 特大 */
+.has-huge-font-size {
+    font-size: 2.25rem;
+}

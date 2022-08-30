@@ -1,0 +1,672 @@
+.pleaseScrollDown_wrapper{
+    margin-top:10vh;
+    .pleaseScrollDown{
+        width:50px;
+        height:100px;
+        line{
+            &:first-of-type{
+                animation: parts-1st 2s ease-in infinite;
+            }
+            &:last-of-type{
+                animation: parts-2nd 2s ease-out infinite;
+            }
+        }
+    }
+}
+
+/* animation's Definition */
+
+/* origine */
+@-webkit-keyframes parts-1st {
+    0% {
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    50% {
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50.1% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+                transform: scale(1,1);
+    }
+    100%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin:50% 100%;
+        -moz-transform-origin:50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}
+
+@-moz-keyframes parts-1st {
+    0% {
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    50% {
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50.1% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+                transform: scale(1,1);
+    }
+    100%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin:50% 100%;
+        -moz-transform-origin:50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}
+
+@-ms-keyframes parts-1st {
+    0% {
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    50% {
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50.1% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+                transform: scale(1,1);
+    }
+    100%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin:50% 100%;
+        -moz-transform-origin:50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}
+
+@-o-keyframes parts-1st {
+    0% {
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    50% {
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50.1% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+                transform: scale(1,1);
+    }
+    100%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin:50% 100%;
+        -moz-transform-origin:50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}
+
+@keyframes parts-1st {
+    0% {
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    25%{
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50% {
+        -webkit-transform-origin: 50% 0%;
+        -ms-transform-origin: 50% 0%;
+        -moz-transform-origin: 50% 0%;
+        -o-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50.1% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+                transform: scale(1,1);
+    }
+    75%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin:50% 100%;
+        -moz-transform-origin:50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    100%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin:50% 100%;
+        -moz-transform-origin:50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}
+
+@-webkit-keyframes parts-2nd {
+    0% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform: 50% 100%;
+        -moz-transform: 50% 100%;
+        -o-transform: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    25%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform: 50% 100%;
+        -moz-transform: 50% 100%;
+        -o-transform: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    50% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50.1%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin: 100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    75%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin: 100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    100%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin:100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}
+
+@-moz-keyframes parts-2nd {
+    0% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform: 50% 100%;
+        -moz-transform: 50% 100%;
+        -o-transform: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    25%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform: 50% 100%;
+        -moz-transform: 50% 100%;
+        -o-transform: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    50% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50.1%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin: 100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    75%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin: 100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    100%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin:100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}
+
+@-ms-keyframes parts-2nd {
+    0% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform: 50% 100%;
+        -moz-transform: 50% 100%;
+        -o-transform: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    25%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform: 50% 100%;
+        -moz-transform: 50% 100%;
+        -o-transform: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    50% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50.1%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin: 100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    75%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin: 100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    100%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin:100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}
+
+@-o-keyframes parts-2nd {
+    0% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform: 50% 100%;
+        -moz-transform: 50% 100%;
+        -o-transform: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    25%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform: 50% 100%;
+        -moz-transform: 50% 100%;
+        -o-transform: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    50% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50.1%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin: 100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    75%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin: 100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    100%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin:100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}
+
+@keyframes parts-2nd {
+    0% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform: 50% 100%;
+        -moz-transform: 50% 100%;
+        -o-transform: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    25%{
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform: 50% 100%;
+        -moz-transform: 50% 100%;
+        -o-transform: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    50% {
+        -webkit-transform-origin: 50% 100%;
+        -ms-transform-origin: 50% 100%;
+        -moz-transform-origin: 50% 100%;
+        -o-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    50.1%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin: 100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    75%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin: 100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        -moz-transform: scale(1,1);
+        -o-transform: scale(1,1);
+        transform: scale(1,1);
+    }
+    100%{
+        -webkit-transform-origin: 100% 60%;
+        -ms-transform-origin: 100% 60%;
+        -moz-transform-origin: 100% 60%;
+        -o-transform-origin:100% 60%;
+        transform-origin: 100% 60%;
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        -moz-transform: scale(0,0);
+        -o-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+}

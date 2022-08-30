@@ -1,0 +1,97 @@
+@use "mixin_and_variable" as mixVal;
+
+.taxonomy-work{
+    @include mixVal.archive_width(1200);
+    margin: 0 auto;
+    .taxonomy-work_header{
+        padding: 15rem 0 2.4rem;
+        h4{
+            text-align: center;
+        }
+    }
+    .taxonomy-work_main{
+        @include mixVal.flex(space-around,center);
+        row-gap: 4.8rem;
+        flex-wrap: wrap;
+        margin: 0 auto 12.8rem;
+        .archive-works_article_item{
+            .works_archive{
+                width:100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+                row-gap: 24px;
+                flex-wrap: wrap;
+                .works_container{
+                    width:38.4rem;
+                    padding:2.4rem;
+                    background-color: #efefef;
+                    border: #000 solid 1px;
+                    border-radius: 10px;
+                    .works_category{
+                        @include mixVal.flex(flex-start,center);
+                        column-gap: 0.8rem;
+                    }
+                    h5{
+                        display: flex;
+                        height:8.5rem;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        margin-top: 0.8rem;
+                    }
+                    p{
+                        width:100%;
+                        height: 15rem;
+                        margin-top:1.2rem; 
+                    }
+                    .banner_wrapper{
+                        @include mixVal.flex(center,center);
+                        margin-top:1.2rem;
+                        img{
+                            max-width: 300px;
+                            max-height: 200px;
+                            border:solid 1px #a7a7a7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:mixVal.$tab_maxwidth) and (min-width:mixVal.$tab_minwidth) {
+    .taxonomy-work{
+        .taxonomy-work_main{
+            padding: 0 4vw;
+            .archive-works_article_item{
+                .works_archive{
+                    .works_container{
+                        p{
+                            height:20vh;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:mixVal.$sp_maxwidth) {
+    .taxonomy-work{
+        .taxonomy-work_main{
+            padding:0 4vw;
+            .archive-works_article_item{
+                .works_archive{
+                    .works_container{
+                        p{
+                            height:10vh;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

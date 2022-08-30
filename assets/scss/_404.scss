@@ -1,0 +1,17 @@
+@use "mixin_and_variable" as mixVal;
+
+.not-found{
+    @include mixVal.archive_width(900);
+    @include mixVal.flex(flex-start,flex-start,column);
+    row-gap: 2.4rem;
+    padding-top:15rem;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:mixVal.$tab_maxwidth) and (min-width:mixVal.$tab_minwidth) {
+    
+}
+
+@media screen and (max-width:mixVal.$sp_maxwidth) {
+    
+}

@@ -1,0 +1,17 @@
+/* loop-works */
+@use "../../scss/mixin_and_variable" as mixVal;
+
+.page-works-index_article_main{
+    @include mixVal.archive_width(calc(( 1200 - ( 24*2 ) ) / 3));
+    row-gap: 2.4rem;
+    margin: 0 auto;
+    background-color: #a7a7a7;
+    padding:2.4rem;
+    border:solid 2px #000;
+    border-radius: 12px;
+    .works_container{
+        .banner_wrapper{
+            @include mixVal.flex(center,center);
+        }
+    }
+}

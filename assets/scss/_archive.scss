@@ -1,0 +1,29 @@
+@use "mixin_and_variable" as mixVal;
+
+.archive{
+    .archive_article_header{
+        @include mixVal.archive_width(900);
+        padding:15rem 0 2.4rem;
+        margin: 0 auto;
+    }
+    .archive_article_footer{
+        @include mixVal.archive_width(900);
+        @include mixVal.flex(center,center,column);
+        row-gap: 2.4rem;
+        margin: 4.8rem auto 7.2rem;
+    }
+}
+
+@media screen and (max-width:mixVal.$tab_maxwidth) and (min-width:mixVal.$tab_minwidth) {
+    
+}
+
+@media screen and (max-width:mixVal.$sp_maxwidth) {
+
+.archive{
+    .archive_article_header{
+        padding:15rem 4vw 2.4rem;
+    }
+}
+
+}

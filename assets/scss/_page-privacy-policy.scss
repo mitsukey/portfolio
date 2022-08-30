@@ -1,0 +1,36 @@
+@use "mixin_and_variable" as mixVal;
+
+.page-privacy-policy {
+    h4{
+        padding: 15.0rem 0 6rem;
+        text-align: center;
+    }
+    article {
+        max-width: 1200px;
+        margin: 0 auto;
+        .page-privacy-policy_wrapper {
+            @include mixVal.flex(flex-start,flex-start,column);
+            margin: 1.6rem 0 7.2rem;
+            row-gap: 24px;
+            .page-privacy-policy_container {
+                @include mixVal.flex(flex-start,flex-start,column);
+                row-gap: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:mixVal.$tab_maxwidth) and (min-width:mixVal.$tab_minwidth) {
+    
+}
+
+@media screen and (max-width:mixVal.$sp_maxwidth) {
+    .page-privacy-policy {
+        h4{
+            padding: 15.0rem 4vw 6rem;
+        }
+        article{
+            padding:0 4vw;
+        }
+    }
+}
